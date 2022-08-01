@@ -1,0 +1,13 @@
+<%= form_with model: [ @article, @article.remarks.build ] do |form| %>
+  <p>
+    <%= form.label :remarker %><br>
+    <%= form.text_field :remarker %>
+  </p>
+  <p>
+    <%= form.label :comment %><br>
+    <%= form.text_area :comment %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
