@@ -7,3 +7,10 @@
   <strong>Remark:</strong>
   <%= remark.comment %>
 </p>
+
+<p>
+  <%= link_to "Destroy Remark", [remark.article, remark], data: {
+                turbo_method: :delete,
+                turbo_confirm: "Are you sure?"
+              } %>
+</p>
